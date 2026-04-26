@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INTROCARD</title>
+
+ <style>
+  body {
+    background-image: url(Thermophiles.jpg);
+    background-size: cover;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #333;
+    padding: 20px;
+    margin: 0;
+    position: relative;
+  }
+
+  body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.3);
+    z-index: -1;
+  }
+
+  header {
+    background-image: url(Header.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 40px 20px;
+    text-align: center;
+    margin: -20px -20px 20px -20px;
+    
+  }
+
+  header h1 {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    font-size: 2.5em;
+    margin: 0;
+  }
+
+  div{
+    background-color: rgba(130, 160, 150, 0.85);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: auto;
+    margin-bottom: 20px;
+    border: 6px dashed rgba(80, 110, 100, 0.9);
+  }
+
+ button {
+    background-color: rgba(80, 110, 100, 0.85);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 6px dashed rgb(50, 70, 65);
+  }
+
+  p { font-weight: bold; 
+      padding: 10px;
+      border-radius: 5px;
+         background-color: rgba(220, 150, 80, 0.8);
+         border: 6px dashed rgb(50, 70, 65);
+}
+
+  footer {
+    background-image: url(zhongli-and-childe.gif);
+    background-size: contain;
+    background-position: center;
+    margin: 20px -20px -20px -20px;
+    padding: 40px 20px;
+    text-align: center;
+    border: 6px dashed rgb(136, 86, 25);
+  }
+
+  footer h1 {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    font-size: 2.5em;
+    margin: 0;
+  }
+
+ </style>
+
+  <script>
+    function toggleDisplay(elementId) {
+      const element = document.getElementById(elementId);
+      if (element.style.display === 'none' || element.style.display === '') {
+        element.style.display = 'block';
+      } else {
+        element.style.display = 'none';
+      }
+    }
+  </script>
+
+</head>
+<body>
+  <header>
+    <h1>My Introduction ! ~</h1>
+  </header>
+
+
+    <div class="intro">
+       <h1> <img src="screenshot.jpg" alt="icon" width="75" height="75" style="vertical-align: middle; margin-right: 10px; border-radius: 50%;"> INTRODUCTION </h1>
+        <h2 style="text-align: center;"> I'm Daniel, and this is my Intro. </h2> 
+
+        <img src="Introcard1.jpg" alt="Introcard1" width="150" height="150" style="border-radius: 20px; display: block; margin: 20px auto; border: 6px dashed rgba(80, 110, 100, 0.85); box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+
+        <p style="text-align: center;"> ⊹₊˚‧︵‿₊୨ᰔ୧₊‿︵‧˚₊⊹⊹₊˚‧︵‿₊୨ᰔ୧₊‿︵‧˚₊⊹⊹₊˚‧︵‿₊୨ᰔ୧₊‿︵‧˚₊⊹ </p>
+    </div>
+
+    <div class="nicknames">
+       <p> My nicknames </p>
+       <button onclick="toggleDisplay('nicknames')"> click me for nicknames </button>
+         <p id="nicknames" style="display:none;"> My nicknames are: <br> 1. Dan <br> 2. Luci <br> 3. Lucian <br> 4. Danci <br> 5. Niel </p>
+    </div>
+
+    <div class="fandoms">
+      <p> My Fandoms</p>
+      <button onclick="toggleDisplay('fandoms')"> click me for fandoms </button>
+        <p id="fandoms" style="display:none;"> My fandoms are: <br> 1. OSC <br> 2. Genshin <br> 3. HSR <br> 4. Hetalia <br> 5. Alnst <br> 6. PJSK </p>
+    </div>
+
+    <div class="hobbies">
+       <p> My Hobbies </p>
+       <button onclick="toggleDisplay('hobbies')"> click me for hobbies </button>
+        <p id="hobbies" style="display:none;"> My hobbies are: <br> 1. Playing games <br> 2. Drawing and Painting <br> 3. Reading fanfictions <br> 4. Writing Fanfics and Poems <br> 5. Listening to music </p>
+    </div>
+
+    <div class="subjects">
+        <p> Subjects I excel in </p>
+        <button onclick="toggleDisplay('subjects')"> click me for subjects </button>
+        <p id="subjects" style="display:none;"> My strongest/favorite subjects are: <br> 1. Mathematics <br> 2. Science <br> 3. Psychology </p>
+    </div>
+
+    <div class="about-me">
+        <p style="text-align: center;"> ⊹₊˚‧︵‿₊୨ᰔ୧₊‿︵‧˚₊⊹⊹₊˚‧︵‿₊୨ᰔ୧₊‿︵‧˚₊⊹⊹₊˚‧︵‿₊୨ᰔ୧₊‿︵‧˚₊⊹ </p>
+
+        <h3> About Me </h3>
+             <p> June 6, 20## </p>
+             <p> You'll know my age if I tell ya</p>
+             <p> FTM (Female to Male) and Pansexual </p>
+             <br>
+
+           <p> Personality Traits </p>
+           <p> MBTI Type: ISFJ</p>
+           <button onclick="toggleDisplay('personality')"> click me for personality traits </button>
+           <p id="personality" style="display:none;"> A. Highly sarcastic <br> B. Empathetic <br> C. Energetic <br> D. Creative <br> E. Impulsive <br> F. Depressive highkey </p>
+           
+          <p> My kins </p>
+            <button onclick="toggleDisplay('kins')"> click me for kins </button>
+            <p id="kins" style="display:none;"> My kins are: <br> 1. Kaveh <br> 2. Gepard <br> 3. Childe/Tartaglia <br> 4. Ivan from Alnst <br> 5. Min-joon from When the Yakuza falls in love <br> 6. Kang Soo-hwa from Sign </p>
+
+
+           <p> My Favorite Artists</p>
+           <button onclick="toggleDisplay('favorite-artists')"> click me for favorite artists </button>
+           <p id="favorite-artists" style="display:none;"> My favorite artists are: <br> 1. The Front Bottoms <br> 2. Esha Tewari <br> 3. Adrianne Lenker <br> 4. Kodi Rhianne <br> 5. Avril Lavigne </p>
+
+           <p> My Socials</p>
+           <button onclick="toggleDisplay('socials')"> click me for socials </button>
+           <p id="socials" style="display:none;"> 1. llvzicu on tiktok <br> 2. ccccciancu on instagram<br> 3. llvzi on spotify </p>
+
+           <p style="text-align: center;"> ⊹₊˚‧︵‿₊୨ That's All !~ ୧₊‿︵‧˚₊⊹⊹₊˚‧︵‿₊୨ᰔ୧₊‿︵‧˚₊⊹ </p>
+
+    </div>
+     <img src="Introcard2.jpg" alt="Introcard2" width="200" height="150" style="border-radius: 20px; display: block; margin: 20px auto; border: 6px dashed rgba(80, 110, 100, 0.85); box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+
+       <footer>
+         <h1>Thank you!</h1>
+       </footer>
+
+    
+</body>
+</html>
